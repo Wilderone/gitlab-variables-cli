@@ -20,7 +20,7 @@ Use aliases for simplify of usage:
 MOUNT_CREDS="-v ~/credentials.ini:/app/credentials.ini"
 MOUNT_VARS="-v ~/variables.json:/app/variables.json"
 PROJECT="-e CLI_GITLAB_PROJECT=base-images"
-DEFINE_CREDENTIALS='-e GITLAB_CREDENTIALS=/app/credentials.ini'
+DEFINE_CREDENTIALS="-e GITLAB_CREDENTIALS=/app/credentials.ini"
 
 alias glvar='docker run -ti --rm ${MOUNT_CREDS} ${MOUNT_VARS} ${PROJECT} ${DEFINE_CREDENTIALS} glvar'
 
