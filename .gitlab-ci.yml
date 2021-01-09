@@ -4,7 +4,7 @@ stages:
 build:
   stage: build
   tags:
-    - gitlab-org-docker
+    - docker
   script:
     - docker build -t "${CI_REGISTRY_IMAGE}/glvar:latest" .
     - docker push "${CI_REGISTRY_IMAGE}/glvar:latest"
