@@ -16,5 +16,5 @@ build:
     - docker-build
   script:
     - docker build -t "${DOCKER_LOGIN}/glvar:latest" .
-    - docker login -u $DOCKER_LOGIN $DOCKER_PASSWORD
+    - docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
     - docker push "${DOCKER_LOGIN}/glvar:latest"
