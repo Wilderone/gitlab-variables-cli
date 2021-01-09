@@ -15,6 +15,6 @@ build:
   tags:
     - docker-build
   script:
-    - docker build -t "${CI_REGISTRY_IMAGE}/glvar:latest" .
+    - docker build -t "${DOCKER_LOGIN}/glvar:latest" .
     - docker login -u $DOCKER_LOGIN $DOCKER_PASSWORD
     - docker push "${DOCKER_LOGIN}/glvar:latest"
