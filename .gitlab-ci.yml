@@ -5,6 +5,10 @@ services:
   - docker:19.03.12-dind
 
 build:
+  image:
+    name: docker:19.03.12
+    entrypoint: [""]
+
   stage: build
   tags:
     - docker
