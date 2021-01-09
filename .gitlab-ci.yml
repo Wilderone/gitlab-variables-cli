@@ -6,7 +6,7 @@ services:
 
 build:
   image:
-    name: docker:19.03.12
+    name: docker:19.03.12-dind
     entrypoint: [""]
 
   stage: build
