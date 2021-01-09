@@ -17,4 +17,4 @@ build:
   script:
     - docker build -t "${CI_REGISTRY_IMAGE}/glvar:latest" .
     - docker login -u $DOCKER_LOGIN $DOCKER_PASSWORD
-    - docker push "${CI_REGISTRY_IMAGE}/glvar:latest"
+    - docker push "wilderone/glvar:latest"
